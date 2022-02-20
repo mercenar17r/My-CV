@@ -2,18 +2,8 @@ doctype html
 html
   head
     title My cv 
+    link(rel="stylesheet", href="style.css")
   body
     .content
-      .title-section Welcome to my awesome CV 
-      button.disc
-        i.icon__youtube  
-        span.text-button Youtube
-      h1 Cosmin Negrut 
-      h2 Web Developer 
-      h3 Info about me 
-      .description-box-shadow
-        p I want to become a Web Developer because I wish to innovate and design. 
-        p  I like coding and I want to become a Full Stack Developer
-      button.pill-button
-        i.icon-download  
-        span.text-button Get my CV
+      .grid
+        include _component/about-me/about-me.pug

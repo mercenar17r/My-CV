@@ -1,0 +1,12 @@
+
+{
+    "titleSection":" Welcome to my Cv",
+    "mainTitle":"Cosmin Negrut",
+    "subTitle":"Web Developer",
+    "info":"Info about me",
+    "descriptionList": [
+        "I want to become a Web Developer because I wish to innovate and design.",
+        "I like coding and I want to become a Full Stack Developer "
+    ],
+    "downloadButtonLabel":"Get my CV"
+    }
