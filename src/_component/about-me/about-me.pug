@@ -1,12 +1,6 @@
 //-pre=JSON.stringify(data['about-me'], null, 2)
-.column(span="row")
-    .title-section-wrapper
-        .title-section= data['about-me'].titleSection 
-.column(span="row" height="10")
-.column(span="row")
-    button.disc-button-red
-        i.icon-youtube  
-.column(span="row" height="10")
+- var titleSection = data['about-me'].titleSection ;
+include ../section-title/section-title.pug
 .column(span="row")
     h1.about-me-main-title= data['about-me'].mainTitle
 .column(span="row")
@@ -21,7 +15,7 @@
 .column(span="row" height="10")
 .column(span="row")
     button.pill-button-blue
-        i.icon-download  
+        i.icon__download  
         span.text-button= data['about-me'].downloadButtonLabel
 .column(span="row" height="10")
 .column(span="row")

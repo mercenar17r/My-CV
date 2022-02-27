@@ -1,0 +1,49 @@
+
+- var titleSection = data.connect.titleSection
+include ../section-title/section-title.pug
+
+.column(span="row")
+    .connect-avatar 
+.column(span="row" height="10")
+
+
+each social,key in data.connect.socialList
+    input.connect-radio(
+    type="radio"
+    name="connect-label"
+    id=`connect-label--${key}`
+)
+    .column(span="1")
+        label(for=`connect-label--${key}`).connect-disc 
+            i(class=`icon-${social.icon}`)
+
+.column(span="row" height="10")
+.column(span="row")
+    .description-box-arrow
+        .description-box-header
+            .description-box-title dddddddddddd
+            .description-box-close
+                input.connect-radio(
+                    type="radio"
+                    name="connect-label"
+                    id=`connect-label--reset`
+                    
+                )
+                label(for=`connect-label-reset`).connect-disc 
+                    i(class=`icon-cross`)
+        .description-box-body
+            p.description-box-pharagraph Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.                dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+        .description-box-footer
+        button.pill-button-blue
+            i.icon-link 
+            span.text-button= data['about-me'].downloadButtonLabel
+
+.column(span="row" height="10")
+.column(span="row")
+    button.disc-button-green
+        i.icon-arrow-down 
+.column(span="row" height="10")
+
+
